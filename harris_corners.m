@@ -51,10 +51,4 @@ function [corners,strength] = harris_corners(I)
        end
     end
 
-    % 7) Compute nonmax suppression
-    %output = im > imdilate(im, [1 1 1 1 1;1 1 1 1 1; 1 1 0 1 1;1 1 1 1 1;1 1 1 1 1]);
-    
-    %imshow(I);
-    %hold on;
-    %scatter(corners(1,:),corners(2,:))
 end

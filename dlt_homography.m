@@ -14,9 +14,6 @@ function [H, A] = dlt_homography(I1pts, I2pts)
 %    H  - 3x3 perspective homography (matrix map) between image coordinates.
 %    A  - 8x9 DLT matrix used to determine homography.
 
-%--- FILL ME IN ---
-
-% Code goes here...
   A = zeros(8,9);
   %fill in matrix
   for i = 1:4

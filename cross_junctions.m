@@ -20,9 +20,6 @@ function [Ipts] = cross_junctions(I, boundPoly, Wpts)
 %    Ipts  - 2xn array of cross-junctions (x, y), relative to the upper left
 %            corner of I.
 
-%--- FILL ME IN ---
-
-% Code goes here...
     %Ib = gaussian_blur(I,5,3);
     Ib = I;
     Ipts = [];

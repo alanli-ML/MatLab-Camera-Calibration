@@ -14,9 +14,7 @@ function [Ib] = gaussian_blur(I, wndSize, sigma)
 %   --------
 %    Ib  - mxn filtered output image, of same size and class as I.
 
-%--- FILL ME IN ---
 
-% Code goes here...
 
     %create kernel
     kernel = zeros(wndSize);

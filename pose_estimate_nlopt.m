@@ -15,9 +15,6 @@ function [E] = pose_estimate_nlopt(Eg, Ipts, Wpts)
 %   --------
 %    E  - 4x4 homogenous pose matrix, estimate of camera pose in target frame.
 
-%--- FILL ME IN ---
-
-% Code goes here...
     N = size(Wpts,2);
     E = Eg;
     num_it = 100;

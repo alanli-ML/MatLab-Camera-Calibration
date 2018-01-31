@@ -24,28 +24,11 @@ function [pt] = saddle_point(I)
 %   Circuits and Systems (APCCAS'02), vol. 2, (Singapore), pp. 191-195,
 %   Dec. 2002.
 
-%--- FILL ME IN ---
-
-% Code goes here...
 
     %get size of input
     m = size(I,1);
     n = size(I,2);
-    
-    
-    
-%     %confirm presence of X junction
-%     sum_sides = [sum(I(:,1)), sum(I(:,n)),sum(I(1,:)),sum(I(m,:))];
-%     [maxval,argmax] = max(sum_sides);
-%     sum_sides(argmax) = 0;
-%     [maxval2,argmax] = max(sum_sides);
-%     sum_sides(argmax) = 0;
-%     sum_max = maxval + maxval2;
-%     imshow(I)
-%     if sum_max > 2*sum(sum_sides)
-%         pt = [-1;-1];
-%         return
-%     end
+   
     
     %apply gaussian blur
     kernel_size = 3;
@@ -125,9 +108,6 @@ function [pt] = saddle_point(I)
     b = [ -a(4); -a(5)];
     pt = A\b;
     pt = pt + crop_pad;
-    %imshow(uint8(I))
-    %hold on
-    %scatter(pt(1),pt(2))
   
 %------------------
   

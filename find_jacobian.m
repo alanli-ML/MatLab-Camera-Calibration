@@ -15,8 +15,6 @@ function [J] = find_jacobian(K, Ec, Wpt)
 %   --------
 %    J  - 2x6 Jacobian matrix (columns are tx, ty, tz, r, p, q).
 
-%--- FILL ME IN ---
-
 Hwc = Ec;
 P = Wpt;
 
