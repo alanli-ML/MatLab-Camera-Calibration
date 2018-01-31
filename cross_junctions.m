@@ -82,11 +82,11 @@ function [Ipts] = cross_junctions(I, boundPoly, Wpts)
         end
     end
     
-    %imshow(uint8(Ib))
-    %hold on 
-    %scatter(pts(1,:),pts(2,:))
-    %scatter(Ipts(1,:),Ipts(2,:))
-    %scatter([0,640],[0,480])
+    imshow(uint8(Ib))
+    hold on 
+    scatter(pts(1,:),pts(2,:))
+    scatter(Ipts(1,:),Ipts(2,:))
+    scatter([0,640],[0,480])
     
     
     %now to match points
@@ -126,8 +126,6 @@ function [Ipts] = cross_junctions(I, boundPoly, Wpts)
     end
    
     
-    %MUST MAKE ASSUMPTION ON FORM OF WORLD POINTS IN ORDER TO MATCH WITH
-    %IMAGE POINTS:
     
     %assuming world points are in 6x8 grid with identical Z values:
     corner_pts_world = [Wpts(1:2,1),Wpts(1:2,8),Wpts(1:2,48),Wpts(1:2,41)];
